@@ -1,0 +1,177 @@
+*{
+    margin:0; 
+    box-sizing: border-box;
+    padding:0;
+}
+
+html, section{
+    background-color: black;
+     overflow-y: hidden;
+}
+
+/* CSS for loading-container */
+.loading-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 7777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+.input-Group{
+    width:75%;
+}
+
+i:hover{
+transition: all 0.5s ease-in-out;
+color:#fdd111;
+}
+.form-control{
+    border:none;
+    border-bottom:2px solid rgb(119, 119, 119);
+    border-radius:0px;
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.2);
+}
+.form-control:focus{
+    color: aliceblue;
+    box-shadow: none;
+    background-color:transparent;
+}
+.form-control::placeholder {
+    color: aliceblue;
+}
+.errorMessg{
+    color: rgb(94, 1, 1);
+    background-color:rgb(255, 234, 234);
+    padding:7px 7px;
+    border-radius:5px;
+    margin-top:1px;
+}
+.title-contact h1{
+    position: relative;
+}
+.title-contact h1::after{
+position: absolute;
+ content:"";
+ height:1px;
+ width:140px;
+background-color:rgb(255, 0, 0);
+bottom:-10px;
+left:50%;
+transform: translateX(-50%);
+}
+.title-contact h1::before{
+    position: absolute;
+     content:"";
+     height:1.3px;
+     width:70px;
+    background-color:rgb(255, 0, 0);
+    bottom:-16px;
+    left:50%;
+    transform: translateX(-50%);
+    }
+.side-nav-menu {
+        min-height:100vh;
+        position: fixed;
+        display: flex;
+        top: 0px;
+        left:-220px;
+        z-index:99999;
+    } 
+.nav-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:10px 10px;
+    background-color: black;
+} 
+.nav-header{
+    width:50px;
+}
+.control-links{
+    position: relative;
+    overflow: hidden;
+}
+.links{
+    width:200px;
+    height:200px;
+}
+.list-unstyled{
+    position: absolute;
+     top:100%;
+}
+
+.meals-content,.area-content{
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+.layer-content{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.689);
+    width:100%;
+    height:100%;
+    top: 100%;
+    transition:all 0.4s;
+    padding:10px 20px;
+}
+.layer-content p{
+    font-size:14px; 
+    font-weight: 500;
+}
+.meals-content:hover .layer-content ,.area-content:hover .layer-content{
+   top:0;
+}
+.fa{
+ background-color: transparent;
+ font-size:30px;
+ cursor: pointer;
+}
+.hide{
+    display:none;
+}
+.meals-content,.area-content{
+    cursor: pointer;
+}
+.btn-recipe button,.btn-ingredient button,.btn-tags button{
+    background-color:#d4edda;
+    border:none;
+    border-radius: 5px;
+    padding:5px 8px;
+    font-weight: 200;
+    margin:5px;
+}
+.btn-recipe button{
+    background-color: #cff4fc;
+}
+.btn-tags button{
+    background-color: #fccfcf;
+}
+.dishContent .myIcon i{
+    color:green;
+}
+.dishContent{
+    height:200px;
+    overflow: hidden;
+    padding:5px 15px;
+    transition: all 0.7s;
+}
+.dishContent p{
+    font-size:12px;
+    text-align: center;
+}
+.dishContent:hover{
+cursor: pointer;
+border-radius:5px;
+box-shadow: 0 1px 7px 0  #fdd211, 0 1px 19px 0  #fdd21191;
+}
+
+.dishContent:hover .myIcon i{
+    color: #fdd211;
+}

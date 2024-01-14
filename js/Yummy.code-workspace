@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../smart login"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "query"
+	}
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Radwa Hassan">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="loading-container">
+      <i class="fa-solid fa-spinner fa-spin text-white"></i>
+     </div>
+
+
+      <div id="pages">
+    <!-- Loading Screen -->
+
+      <!-- S  t  a  r  t             N  a  v  B a  r-->
+        <div class="side-nav-menu">
+
+        <div class="nav-tab">
+
+          <div class="control-links">
+            <div class="links"></div>
+            <ul id="menu" class="list-unstyled">
+              <li class="py-2"><a data-page="search" href="#" class="text-decoration-none text-white fw-light">Search</a></li>
+              <li class="py-2"><a data-page="categories" href="#" class="text-decoration-none text-white fw-light">Categories</a></li>
+              <li class="py-2"><a data-page="area" href="#" class="text-decoration-none text-white fw-light">Area</a></li>
+              <li class="py-2"><a data-page="ingredients" href="#" class="text-decoration-none text-white fw-light"> Ingredients</a></li>
+              <li class="py-2"><a data-page="contact" href="#" class="text-decoration-none text-white fw-light">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="nav-footer">
+            <div class="icons pb-2 text-white">
+              <i class="fab fa-facebook-f me-1"></i>
+              <i class="fab fa-twitter me-1"></i>
+              <i class="fas fa-globe me-1"></i>
+            </div>
+      
+            <div class="footer">
+              <p class="text-white">Copyright © 2019 All Rights <br>Reserved.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="nav-header d-flex flex-column justify-content-between p-4 text-center px-2 bg-white text-black">
+          <img class="logo w-100" src="./img/logo.png" alt="logo">
+            <i class="fa fa-bars"></i>
+      
+      
+          <div class="myIcon bg-white">
+            <i class="fas fa-globe d-block py-2 bg-white"></i>
+            <i class="fas fa-share-alt bg-white"></i>
+          </div>
+        </div>
+      
+      </div>
+      <!--E  n  d                 N  a  v  B  a  r-->
+
+
+  <!-- S  t  a  r  t       M  a  i  n-->
+   <section id="meals" class="page">
+     <div class="container-fluid p-5 m-auto">
+      <div class="row gy-4 ps-5">
+
+      </div>
+    </div>
+  </section>
+  
+  <!--E  n  d        M  a  i  n-->
+
+
+  <!-- S  t  a  r  t       S  e  a  r  c  h-->
+<section id="search" class="page hide" data-page="search">
+    <div class="container-fluid m-auto p-4">
+
+      <div class="input-Group row gy-1 ps-5  d-flex m-auto w-md-100">
+        
+                  <div class="col-md-6 col-ms-12">
+                     <div class="input pt-4 me-4">
+                       <input id="firstName" type="text" placeholder="Search By Name" class="form-control text-white bg-transparent">
+                    </div>   
+                  </div>
+        
+                          
+                  <div class="col-md-6 col-ms-12">
+                    <div class="input pt-4 me-4">
+                      <input id="firstLetter" type="text" placeholder="Search By firstLetter" class="form-control text-white bg-transparent">
+                   </div>   
+                 </div>     
+
+      </div>
+   
+      <!--   E  n  d        S  e  a  r  c  h-->
+        <div class="searchContent m-auto mt-5 px-4">
+         <div class="row gy-4 ps-5">
+
+         </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- S  t  a  r  t       C  a  t  e  g  o  r  i  e  s-->
+<section id="categories" class="page hide" data-page="categories">
+  <div class="container-fluid p-4 m-auto">
+    <div class="row gy-4 ps-5 py-1">
+    </div>
+  </div>
+</section>
+  <!--E  n  d       C  a  t  e  g  o  r  i  e  s-->
+
+  
+<!-- S  t  a  r  t       A  r  e  a-->
+<section id="area" class="page hide" data-page="area">
+  <div class="container-fluid p-4 m-auto">
+    <div class="row gy-4 ps-5 py-1">
+    
+    </div>
+  </div>
+</section>
+<!-- E  n  d      A  r  e  a-->
+
+<!-- S  t  a  r  t       I  n  g  r  e  d  i  e  n  t  s-->
+<section id="ingredients" class="page hide" data-page="ingredients">
+  <div class="container-fluid p-4 m-auto">
+    <div class="row gy-4 ps-5 py-1">
+          
+    </div>
+  </div>
+</section>
+<!-- E  n  d       I  n  g  r  e  d  i  e  n  t  s-->
+
+<!-- S  t  a  r  t       c  o  n  t  a  c  t-->
+<section id="contact" class="page hide " data-page="contact">
+  <form >
+    <div class="container ps-5 m-auto w-75 dvh-100 px-lg-5">
+      <div class="title-contact text-center text-white mt-5 py-4">
+          <h1 class="bg-transparent">Contact Us</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+              <div class="inputGroup p-3 pb-0">
+                  <input id="name" type="text" placeholder="Enter Your Name" class="form-control text-white bg-transparent">
+                  <div class="nameError d-none">
+                      <p class="errorMessg">Special characters and numbers not allowed</p>
+                  </div>
+              </div>
+  
+              <div class="inputGroup p-3 pb-0">
+                  <input id="number" type="text" placeholder="Enter Your Phone" class="form-control text-white bg-transparent">
+                  <div class="phoneError d-none">
+                      <p class="errorMessg">Enter valid Phone Number</p>
+                  </div>
+              </div> 
+
+              <div class="inputGroup p-3 pb-0">
+                  <input id="password"  type="text" placeholder="Enter Your Password" class="form-control text-white bg-transparent">
+                  <div class="passwordError d-none">
+                      <p class="errorMessg">Please enter a valid password!</p>
+                  </div>
+              </div> 
+          </div>        
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+              <div class="inputGroup p-3 pb-0">
+                  <input id="email" type="text" placeholder="Enter Your Email" class="form-control text-white bg-transparent">
+                  <div class="emailError d-none">
+                      <p class="errorMessg">Email not valid *exemple@yyy.zzz</p>
+                  </div>
+              </div>
+  
+              <div class="inputGroup p-3 pb-0">
+                  <input id="age" type="text" placeholder="Enter Your Age" class="form-control text-white bg-transparent">
+                  <div class="ageError d-none">
+                      <p class="errorMessg">Enter valid age</p>
+                  </div>
+              </div> 
+
+              <div class="inputGroup p-3 pb-0">
+                  <input id="repassword" type="text" placeholder="Enter Your Repassword" class="form-control text-white bg-transparent">
+                  <div class="repasswordError d-none">
+                      <p class="errorMessg">Enter valid repassword</p>
+                  </div>
+              </div> 
+          </div>        
+        </div>
+        <div class="col-lg-12">
+          <div class="w-100 text-center mt-5">
+              <p id="success" class="text-success fw-bold fs-4 d-none">success.</p>
+              <p id="error" class="text-danger fw-bold fs-4 d-none">Please enter your data correctly.</p>
+              <button id="submit" type="submit" class="btn btn-outline-danger">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+</section>
+<!-- E  n  d       c  o  n  t  a  c  t-->
+</div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/categories.js"></script>
+    <script  src="./js/area.js"></script>
+    <script src="./js/ingredients.js"></script>
+    <script src="./js/contant.js"></script>
+</body>
+</html>
